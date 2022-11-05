@@ -86,7 +86,7 @@ class NumericFormatOption(IFormatOption):
 
     def format_value(self, dt: datetime.datetime, v: t.Any) -> str:
         assert isinstance(v, int), f"expected int to {self!r}.format_value()"
-        return self.format(v)  # type: ignore
+        return self.format(v)
 
 
 @dataclass

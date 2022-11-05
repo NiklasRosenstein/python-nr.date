@@ -13,7 +13,7 @@ _T_datetime_format = t.TypeVar("_T_datetime_format", bound="_datetime_format")
 @dataclass
 class _datetime_format:
     format_str: str
-    regex: "Pattern"  # type: ignore
+    regex: "Pattern"
     seq: t.List[t.Union[str, IFormatOption]]
 
     @classmethod
